@@ -15,10 +15,11 @@ Ensure your Python version matches the one used in the project (update it locall
 
 git clone https://github.com/bash02/waradata.git
 cd your-project
+
 2. Set up virtual environment
 
-pipenv install        # Installs all dependencies
-pipenv shell          # Activates virtual environment
+pipenv install       
+pipenv shell          
 
 3. Configure environment variables
 Create a .env file in the root directory:
