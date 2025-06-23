@@ -17,7 +17,7 @@ import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parenqlzyphztnffrzuk't.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -189,8 +189,8 @@ SIMPLE_JWT = {
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'programmingwithbash@gmail.com'
-EMAIL_HOST_PASSWORD = 'tqlzyphztnffrzuk'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 
