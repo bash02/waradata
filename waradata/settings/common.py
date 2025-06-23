@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'waradata.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'waradata_db',
-        'HOST': 'localhost',
-        'USER': 'root',
-        'PASSWORD': '19051905'
+        'NAME': os.environ.get('DB_NAME', 'dbname'),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'USER': os.environ.get('DB_USER', 'user'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'password')
     }
 }
 
@@ -189,7 +189,8 @@ SIMPLE_JWT = {
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = ''
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
